@@ -1,5 +1,4 @@
-@media print{
-	body{	background-image: url("wiki.jpg");
+body{	background-image: url("wiki.jpg");
 		background-position: bottom right;
 		background-repeat: repeat;
 		background-attachment: fixed;
@@ -7,15 +6,12 @@
 		font-family: sans-serif;
 		padding: 20px 20px 20px 20px; 
 		color: white;}
-
 p 	{	font-size: 34pt;
 		color: navy;
 		text-indent: 2em; }
-
 b 	{	color: blue;
 		font-size: 20pt;
-		margin-top: 1px; }
-
+		margin-top: 1px;}
 .black {	font-size: 40pt;
 			color: red;
 			font-weight: bold;
@@ -30,26 +26,22 @@ b 	{	color: blue;
 			float: right;
 			text-align: right;
 			width: 60%; 
-			color: black; }
-
+			color: black;}
 div	{	border: 10px solid navy;
 		margin: 100px 100px 100px 100px;
 		padding: 60px 60px 60px 60px;
 		background-color: lightgreen; }
-
 i 	{	padding: 50px 50px 50px 50px; 
 		text-align: center;}
 
 img {	float: right;
 		margin: 0 0 10px 10px;}
-
 nav {	font-weight: bold;
 		color: gold;
 		border: 10px solid yellow;
 		text-align: center;
 		width: 30em;
-		background-color: yellow; }
-
+		background-color: yellow;}
 nav ul 	{ display: none;
 		list-style: none;
 		margin: 0;
@@ -57,22 +49,18 @@ nav ul 	{ display: none;
 		position: relative;
 		top: -2em;
 		left: -8em;
-		width: 20em; }
-
-nav:hover ul { display: block; }
-
+		width: 20em;}
+nav:hover ul {display: block;}
 nav ul li {	border-top: 10px solid yellow;
 			background-color: white;
-			background: center;
 			width: 30em;
 			color: gold; 
 			margin: 20px 20px 20px 20px;
 			padding: 20px 13px 20px 13px;
-			border-right: 20px; }
+			border-right: 20px;}
 nav ul li:hover{background-color: gold;
-				text-decoration: none; }
-}
-@media screen and (min-width: 480px max-width:700px){
+				text-decoration: none;}
+@media screen and (min-width: 480px)and  (max-width:700px){
 		br{
 		padding: 60px 40px 80px 30px;
 		font-family: sans-serif;
@@ -80,5 +68,3 @@ nav ul li:hover{background-color: gold;
 		background-color: black;
 		}
 	}
-
-
