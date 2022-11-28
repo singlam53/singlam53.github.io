@@ -1,4 +1,5 @@
-body{	background-image: url("wiki.jpg");
+@media print{
+	body{	background-image: url("wiki.jpg");
 		background-position: bottom right;
 		background-repeat: repeat;
 		background-attachment: fixed;
@@ -70,7 +71,7 @@ nav ul li {	border-top: 10px solid yellow;
 			border-right: 20px; }
 nav ul li:hover{background-color: gold;
 				text-decoration: none; }
-
+}
 @media screen and (min-width: 480px max-width:700px){
 		br{
 		padding: 60px 40px 80px 30px;
@@ -79,3 +80,5 @@ nav ul li:hover{background-color: gold;
 		background-color: black;
 		}
 	}
+
+
