@@ -1,0 +1,75 @@
+body{	background-image: url("IMG_0561.jpg");
+		background-attachment: fixed;
+		background-color: lightgreen; 
+		color: white;}
+.table, .table * {margin: 0.5%;padding: 0.5%;font-size: 100%;font-family: arial;}
+.table	{	display: table;
+			border-collapse: separate;
+			width: 83%;}
+
+.tr	{	display: table-row;
+		height: 50%;}
+
+.th {	display: table-cell;
+		font-weight: bold;
+		height: 50%;
+		text-align: center;
+		vertical-align: middle;
+		width: 100%;}
+
+.td {	display: table-cell;
+		height: 50%;
+		vertical-align: middle;}
+
+@media screen and (min-width: 50% and max-width:75%){
+		body{
+		font-family: sans-serif;
+		color: lightblue;
+		background-color: ghostwhite;
+		}
+	}
+@media print {
+	body{	background-color: black;}
+	table{	font-family: serif;}
+}
+
+#info{position: relative;
+width: 35%;
+line-height: 100%;}
+
+#info1{position: relative;
+right: 190px;
+line-height: 100%;}
+
+#input{position: relative;
+right: -540px;
+top: -50px;}
+
+.form{margin-left: auto;
+margin-right: auto;
+display: block;
+width: 92%;}
+
+#hobby{position: relative;
+right: 250px;
+float: left;
+width: 300%;
+}
+
+.float{	float: right;
+		text-align: center;
+		margin-bottom: 10%;}
+.floated{float: right;
+		text-align: center;
+		margin-bottom: 220%;}
+.floating{float: right;
+		text-align: center;}
+b{position: relative;
+	left: 535px;
+	font-size: xx-large;
+	text-decoration: underline;
+}
+#nick{position: relative;
+	top: -135px;
+
+}
