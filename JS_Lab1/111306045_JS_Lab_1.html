@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	
+	<script >
+		var number1 = parseInt(window.prompt("Enter first integer"));
+		var number2 = parseInt(window.prompt("Enter second integer"));
+		
+		if(number1 > number2)
+		{ 
+			document.body.style.backgroundColor = 'lightblue';
+			document.write("<h1>firstInput>secondInput</h1>");
+		}else if (number2 > number1)
+		{ 
+			document.body.style.backgroundColor = 'lightgreen';
+			document.write("<h1>secondInput > firstInput</h1>");
+		}else
+		{
+			document.body.style.backgroundColor = 'lightyellow';
+			document.write("<h1>secondInput == firstInput</h1>");
+		}
+
+	</script>
+	<input type="button" value="1st input" onClick="alert( number1 )">
+	<input type="button" value="2nd input" onClick="alert( number2 )">
+
+</body>
+</html>

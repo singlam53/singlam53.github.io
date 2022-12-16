@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+	<script>
+		var number1 = parseInt(window.prompt("Guessing Game ! Enter your answer :"));
+		var rand = Math.floor((Math.random()*10)+1);
+
+		while (number1 < rand || number1 > rand) 
+		{
+			number1 = parseInt(window.prompt("Enter your answer again!"));
+			if(number1 == rand)
+			{	document.body.style.backgroundColor = 'blue';
+				document.writeln("<h1>Congratulations!!!<p>" + "Press F5 to play again!!! </h1>");
+			}
+		}
+	</script>
+</body>
+</html>
