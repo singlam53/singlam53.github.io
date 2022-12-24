@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<p id ="bonus"></p>
+	<script>
+		var sentence = (window.prompt("input data"));
+		var char = (window.prompt("input a char to search"));
+
+		var ans1 = sentence.indexOf(char);
+		var ans2 = sentence.lastIndexOf(char);
+		var ans3 = sentence.indexOf(char,3);
+		document.getElementById("bonus").innerHTML = ans1+"<br> "+ans2+"<br> "+ans3;
+	</script>
+</body>
+</html>

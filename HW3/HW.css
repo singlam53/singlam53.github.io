@@ -17,7 +17,7 @@
 		height: 50%;
 		vertical-align: middle;}
 
-@media screen and (min-width: 50% max-width:75%){
+@media screen and (min-width: 50% )and (max-width:75%){
 		body{
 		font-family: sans-serif;
 		color: lightblue;
@@ -28,9 +28,7 @@
 	body{	background-color: black;}
 	table{	font-family: serif;}
 }
-@media all	{
-	body{}
-}
+
 #info{position: relative;
 width: 35%;
 line-height: 100%;}
