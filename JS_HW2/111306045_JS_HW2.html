@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JS Calculator</title>
+</head>
+<body>
+	<form>
+			<h1 align=center>JS Calculator</h1>
+			<p align=center>
+			Number 1<br><br><input type="text" id= "number1" value=""><br><br>
+			Number 2<br><br><input type="text" id= "number2" value=""><br><br>
+			Operating way?<br><br>
+
+			<select id="method">
+				<option>select</option>
+				<option value="+">+</option>
+				<option value="-">-</option>
+				<option value="*">*</option>
+				<option value="/">/</option>
+			</select><br><br>
+			<input id = "add" name="b1" type="button" value="add" onClick="calculation()"><br>
+			<br>Result = <output id="answer"></output></br>
+	</form>
+
+	
+	<script>
+		function calculation()
+		{
+			var nice = document.getElementById('method').value;
+			if (nice === "+")
+			{
+				addNum();
+			}
+			if (nice === "-")
+			{
+				subNum();
+			}
+			if (nice === "*")
+			{
+				mulNum();
+			}
+			if (nice === "/")
+			{
+				divNum();
+			}
+		}
+		function addNum()
+		{
+			var num1 = parseInt(document.getElementById('number1').value);
+			var num2 = parseInt(document.getElementById('number2').value);
+			document.getElementById('answer').value = num1+num2;
+		}
+		function subNum()
+		{
+			var num1 = parseInt(document.getElementById('number1').value);
+			var num2 = parseInt(document.getElementById('number2').value);
+			document.getElementById('answer').value = num1-num2;
+		}
+		function mulNum()
+		{
+			var num1 = parseInt(document.getElementById('number1').value);
+			var num2 = parseInt(document.getElementById('number2').value);
+			document.getElementById('answer').value = num1*num2;
+		}
+		function divNum()
+		{
+			var num1 = parseInt(document.getElementById('number1').value);
+			var num2 = parseInt(document.getElementById('number2').value);
+			document.getElementById('answer').value = num1/num2;
+		}
+		
+		
+		
+	</script>
+	
+</body>
+</html>
