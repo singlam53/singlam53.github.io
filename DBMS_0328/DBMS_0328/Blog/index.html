@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>搖搖 ! YOYO ! 台北手搖飲地圖</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/cup-straw.ico" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Responsive navbar-->
+    <nav class="navbar sticky-top navbar-dark bg-info fixed-toggler" >
+      <div class="container">
+        <a class="navbar-brand text-white fw-bold" href="#">搖搖 ! YOYO !</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#"><i class="bi bi-house-door-fill"></i></a></li>
+            <li class="nav-item"><a class="nav-link active" href="#">登入/註冊</a></li>
+            <li class="nav-item"><a class="nav-link active" href="#">關於我們</a></li>
+            <li class="nav-item"><a class="nav-link active" href="#">聯絡我們</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page header with logo and tagline-->
+    <header class="py-5">
+      <div class="container img-fluid">
+        <div class="text-center my-5 text-bg-info rounded-5 bg-opacity-100 p-4">
+          <h1 class=" display-1 fw-bold text-info text-bg-light rounded-5 mx-auto w-75 p-5 m-4">搖搖 ! YOYO !</h1>
+          <p class="fs-3 fw-bold text-white bg-opacity-50 ">
+            台北手搖飲地圖
+          </p>
+          <body background="assets/boba.jpg"></body>
+        </div>
+      </div>
+      <div class="container d-flex mb-4">
+        <button type="button" class="flex-fill btn btn-lg me-2 btn-light text-info" data-toggle="modal" data-target="loginModal">登入</button>
+        <button type="button" class="flex-fill btn btn-lg ms-2 btn-light text-info" data-toggle="modal" data-target="registerModal">註冊</button>
+      </div> 
+    </header>
+    <!-- Page content-->
+          <!-- Search widget-->
+        <div class="container"> 
+          <div class="card mb-4">
+            <div class="card-header h2 text-white bg-info fw-bold">搖一搖</div>
+            <div class="card-body">
+              <div class="input-group mb-4">
+                <input
+                  class="form-control"
+                  type="text"
+                  placeholder="今天想要喝什麼呢?"
+                  aria-label="Enter search term..."
+                  aria-describedby="button-search"
+                />
+                <button
+                  class="btn btn-outline-primary"
+                  id="button-search"
+                  type="button"
+                >
+                搖! YO!
+                </button>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                <label class="form-check-label" for="flexRadioDefault1">
+                  品牌
+                </label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                <label class="form-check-label" for="flexRadioDefault2">
+                  名字
+                </label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                <label class="form-check-label" for="flexRadioDefault2">
+                  內容物
+                </label>
+              </div>
+            </div>
+          </div>
+          <!-- Categories widget-->
+          <div class="card mb-4">
+            <div class="card-header h2 text-white bg-info fw-bold">目錄</div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-4">
+                  <ul class="list-unstyled mb-0">
+                    <li><h3><a href="#!" class="badge text-decoration-none text-bg-info text-light">飲料品牌</a></h3></li>
+                  </ul>
+                </div>
+                <div class="col-4">
+                  <ul class="list-unstyled mb-0">
+                    <li><h3><a href="#!" class="badge text-decoration-none text-bg-info text-light">飲料名字</a></h3></li>
+                  </ul>
+                </div>
+                <div class="col-4">
+                  <ul class="list-unstyled">
+                    <li><h3><a href="#!" class="badge text-decoration-none text-bg-info text-light">飲料內容物</a></h3></li>
+                  </ul>
+                </div> 
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer-->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">
+          Copyright &copy; YOYO 2024
+        </p>
+      </div>
+    </footer>
+    <script>
+      const togglePassword = document
+          .querySelector('#togglePassword');
+      const password = document.querySelector('#password');
+      togglePassword.addEventListener('click', () => {
+          // Toggle the type attribute using
+          // getAttribure() method
+          const type = password
+              .getAttribute('type') === 'password' ?
+              'text' : 'password';
+          password.setAttribute('type', type);
+          // Toggle the eye and bi-eye icon
+          this.classList.toggle('bi-eye');
+      });
+  </script>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js">
+
+    </script>
+  </body>
+</html>
